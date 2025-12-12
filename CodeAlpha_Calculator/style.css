@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #141e30, #243b55);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.calculator {
+    background-color: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(15px);
+    padding: 20px;
+    border: 2px solid rgba(0, 0, 0, 0.123);
+    border-radius: 20px;
+    width: 320px;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+}
+
+.display {
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    font-size: 2.2rem;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: right;
+    margin-bottom: 15px;
+    overflow-x: auto;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+}
+
+.btn {
+    height: 60px;
+    border-radius: 12px;
+    font-size: 1.2rem;
+    background: #2c3e50;
+    color: white;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+.btn:hover {
+    background-color: rgb(56, 81, 102);
+    transform: translateY(-2px);
+}
+
+.btn:active {
+    transform: scale(0.95);
+}
+
+.operator {
+    background-color: rgb(205, 143, 50);
+    color: black;
+}
+
+.operator:hover {
+    background-color: rgb(223, 167, 83);
+}
+
+.equal {
+    grid-row: span 2;
+    height: 100%;
+    background-color: rgb(29, 146, 29);
+}
+
+.equal:hover {
+    background-color: rgb(36, 179, 36);
+}
+
+.zero {
+    grid-column: span 2;
+}
+
+.clear {
+    background-color: rgb(238, 60, 54);
+}
+
+.clear:hover {
+    background-color: rgb(252, 86, 74);
+}
+
+.history-box {
+    position: relative;
+    margin: 10px 0 15px;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1.5px solid rgba(0, 0, 0, 0.445);
+    box-shadow: 3px 2px 4px rgba(0, 0, 0, 0.4);
+    padding: 10px;
+    border-radius: 14px;
+    height: 80px;
+    overflow-y: auto;
+}
+
+.history-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 6px;
+}
+
+.history-header h3 {
+    font-size: 0.9rem;
+    color: rgb(211, 210, 210);
+}
+
+#clearHistory {
+    background-color: rgb(216, 55, 34);
+    color: white;
+    font-size: 0.75rem;
+    padding: 4px 10px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+#clearHistory:hover {
+    background-color: rgb(236, 69, 47);
+}
+
+#historyList {
+    list-style: none;
+    font-size: 0.85rem;
+    color: white;
+}
+
+#historyList li {
+    margin-bottom: 4px;
+    opacity: 0.85;
+}
