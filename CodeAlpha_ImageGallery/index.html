@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo">Gallery <span>Pro</span></div>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#">Home</a></li>
+        <li><a href="#carousel">Carousel</a></li>
+        <li><a href="#categories">Categories</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+      <div class="menu-btn" id="menuBtn">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </nav>
+
+    <div class="container">
+      <h1 class="heading">Modern Image Gallery</h1>
+
+      <div class="gallery">
+        <div class="card">
+          <img src="images/a-majestic-lion-rests-on-a-rock-under-dramatic-clouds-showcasing-its-powerful-presence-photo.jpg" alt="" />
+          <p class="caption">Click to see full screen</p>
+        </div>
+
+        <div class="card">
+          <img src="images/images (1).jpeg" alt="" />
+          <p class="caption">Click to see full screen</p>
+        </div>
+
+        <div class="card">
+          <img src="images/images (2).jpeg" alt="" />
+          <p class="caption">Click to see full screen</p>
+        </div>
+      </div>
+
+      <h2 class="carousel-title" id="carousel">Image Carousel</h2>
+
+      <div class="carousel" id="carousel">
+        <button id="prevSlide">‹</button>
+        <img id="carousel-img" src="images/a-majestic-lion-rests-on-a-rock-under-dramatic-clouds-showcasing-its-powerful-presence-photo.jpg" alt="" />
+        <button id="nextSlide">›</button>
+      </div>
+
+      <h2 class="category-title" id="categories">Browse by Category</h2>
+
+      <div class="category-buttons">
+        <button data-category="all" class="active-cat">All</button>
+        <button data-category="nature">Nature</button>
+        <button data-category="city">City</button>
+        <button data-category="animals">Animals</button>
+      </div>
+
+      <div class="category-gallery">
+        <div class="cat-card nature">
+          <img src="images/istockphoto-1403500817-612x612.jpg" alt="" />
+          <p>Nature View</p>
+        </div>
+        <div class="cat-card animals">
+          <img src="images/a-majestic-lion-rests-on-a-rock-under-dramatic-clouds-showcasing-its-powerful-presence-photo.jpg" alt="" />
+          <p>Animals View</p>
+        </div>
+        <div class="cat-card city">
+          <img src="images/images (2).jpeg" alt="City" />
+          <p>City View</p>
+        </div>
+        <div class="cat-card nature">
+          <img src="images/images.jpeg" alt="Nature" />
+          <p>Nature View</p>
+        </div>
+        <div class="cat-card animals">
+          <img src="images/thumb16.jpg" alt="Animals" />
+          <p>Animals View</p>
+        </div>
+        <div class="cat-card city">
+          <img src="images/istockphoto-542727462-612x612.jpg" alt="City" />
+          <p>City View</p>
+        </div>
+        <div class="cat-card nature">
+          <img src="images/images (1).jpeg" alt="Nature" />
+          <p>Nature View</p>
+        </div>
+      </div>
+
+      <div class="lightbox" id="lightbox">
+        <span id="close">×</span>
+        <button id="prev">‹</button>
+        <img id="lightbox-img" />
+        <button id="next">›</button>
+      </div>
+
+      <footer class="footer" id="contact">
+        <p>Developed by <span>Nazneen Khan</span></p>
+
+        <div class="social-icons">
+          <a href="" target="_blank" aria-label="Instagram">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a
+            href="https://www.linkedin.com/in/nazneen-khan-5b532933a/"
+            target="_blank"
+            aria-label="LinkedIn"
+          >
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a
+            href="https://github.com/Nazneen-26"
+            target="_blank"
+            aria-label="GitHub"
+          >
+            <i class="fab fa-github"></i>
+          </a>
+        </div>
+      </footer>
+    </div>
+
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
+  </body>
+</html>
